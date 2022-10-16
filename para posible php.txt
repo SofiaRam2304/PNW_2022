@@ -1,0 +1,3 @@
+
+  <script src="/Recursos/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/Recursos/vendor/php-email-form/validate.js"></script>
