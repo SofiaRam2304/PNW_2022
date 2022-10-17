@@ -519,7 +519,7 @@
   }
   
   /*--------------------------------------------------------------
-  # Counts
+  # Contador
   --------------------------------------------------------------*/
   .counts {
     padding: 30px 0;
@@ -542,7 +542,7 @@
   }
   
   /*--------------------------------------------------------------
-  # Why Us
+  # Por qué nosotros
   --------------------------------------------------------------*/
   .why-us .content {
     padding: 30px;
@@ -608,7 +608,7 @@
   }
   
   /*--------------------------------------------------------------
-  # Features
+  # Caracteristicas
   --------------------------------------------------------------*/
   .features {
     padding-top: 0px;
@@ -650,7 +650,7 @@
   }
   
   /*--------------------------------------------------------------
-  # Courses
+  # Cursos
   --------------------------------------------------------------*/
   .courses .course-item {
     border-radius: 5px;
@@ -718,7 +718,7 @@
   }
   
   /*--------------------------------------------------------------
-  # Trainers
+  # Docentes
   --------------------------------------------------------------*/
   .trainers .member {
     text-align: center;
@@ -897,7 +897,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   /*--------------------------------------------------------------
-  # Cource Details
+  # Detalles de Curso
   --------------------------------------------------------------*/
   .course-details h3 {
     font-size: 24px;
@@ -950,9 +950,13 @@ h1, h2, h3, h4, h5, h6 {
   .course-details .course-info a {
     color: #657a6d;
   }
+
+  .img-cur{
+    margin-top: -120px;
+  }
   
   /*--------------------------------------------------------------
-  # Cource Details Tabs
+  # Tabla / Detalle de Cursos
   --------------------------------------------------------------*/
   .cource-details-tabs {
     overflow: hidden;
@@ -1014,81 +1018,41 @@ h1, h2, h3, h4, h5, h6 {
       background: #8ca7ff;
     }
   }
-  
-  /*--------------------------------------------------------------
-  # Events
+    /*--------------------------------------------------------------
+  # Registro
   --------------------------------------------------------------*/
-  .events .card {
-    border: 0;
-    padding: 0 30px;
-    margin-bottom: 60px;
-    position: relative;
+
+  .card-log {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  }
+
+  .card-title-log {
+    padding: 20px 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #012970;
+    font-family: "Poppins", sans-serif;
   }
   
-  .events .card-img {
-    width: calc(100% + 60px);
-    margin-left: -30px;
-    overflow: hidden;
-    z-index: 9;
-    border-radius: 0;
+  .card-title-log span {
+    color: #899bbd;
+    font-size: 14px;
+    font-weight: 400;
   }
   
-  .events .card-img img {
-    max-width: 100%;
-    transition: all 0.3s ease-in-out;
+  .card-body-log {
+    padding: 0 20px 20px 20px;
   }
   
-  .events .card-body {
-    z-index: 10;
-    background: #fff;
-    border-top: 4px solid #fff;
-    padding: 30px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    margin-top: -60px;
-    transition: 0.3s;
+  .card-img-overlay {
+    background-color: rgba(255, 255, 255, 0.6);
   }
-  
-  .events .card-title {
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .events .card-title a {
-    color: #37423b;
-    transition: 0.3s;
-  }
-  
-  .events .card-text {
-    color: #5e5e5e;
-  }
-  
-  .events .read-more a {
-    color: #777777;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    transition: 0.3s;
-  }
-  
-  .events .read-more a:hover {
-    color: #8ca7ff;
-  }
-  
-  .events .card:hover img {
-    transform: scale(1.1);
-  }
-  
-  .events .card:hover .card-body {
-    border-color: #8ca7ff;
-  }
-  
-  .events .card:hover .card-body .card-title a {
-    color: #8ca7ff;
-  }
-  
+
   /*--------------------------------------------------------------
-  # Pricing
+  # Precios
   --------------------------------------------------------------*/
   .pricing .box {
     padding: 20px;
@@ -1196,9 +1160,82 @@ h1, h2, h3, h4, h5, h6 {
     background: #8ca7ff;
     color: #fff;
   }
+  /*--------------------------------------------------------------
+  # Cursos-Resumen
+  --------------------------------------------------------------*/
+
+  .events .card {
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .events .card-img {
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+  }
+  
+  .events .card-img img {
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .events .card-body {
+    z-index: 10;
+    background: #fff;
+    border-top: 4px solid #fff;
+    padding: 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -60px;
+    transition: 0.3s;
+  }
+  
+  .events .card-title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .events .card-title a {
+    color: #37423b;
+    transition: 0.3s;
+  }
+  
+  .events .card-text {
+    color: #5e5e5e;
+  }
+  
+  .events .read-more a {
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 0.3s;
+  }
+  
+  .events .read-more a:hover {
+    color: #8ca7ff;
+  }
+  
+  .events .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .events .card:hover .card-body {
+    border-color: #8ca7ff;
+  }
+  
+  .events .card:hover .card-body .card-title a {
+    color: #8ca7ff;
+  }
+  
   
   /*--------------------------------------------------------------
-  # Contact
+  # Contactos
   --------------------------------------------------------------*/
   .contact {
     padding-top: 5px;
@@ -1479,8 +1516,46 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   }
 
-  .enviar{
-    margin-top: 20px;
+ .enviar {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-top: 30px;
+    border: 2px solid #fff;
+    color: rgb(255, 255, 255);
+    background-color: #8ca7ff;
+  }
+  
+  .enviar:hover {
+    background: #1d3ca0;
+    border: 2px solid #8ca7ff;
+  }
+
+  .card-title {
+    padding: 20px 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0b5ff0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .card-title span {
+    color: #899bbd;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .card-body {
+    padding: 0 20px 20px 20px;
+  }
+  
+  .card-img-overlay {
+    background-color: rgba(255, 255, 255, 0.6);
   }
   
   #footer .footer-newsletter form input[type=submit]:hover {
